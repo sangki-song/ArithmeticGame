@@ -59,7 +59,7 @@ public class CalcActivity extends AppCompatActivity {
             int num2 = bundle.getInt("num2");
             String operator = bundle.getString("operator");
             answer = bundle.getInt("answer");
-            Toast.makeText(this, "debug:"+answer, Toast.LENGTH_SHORT).show();   //디버깅 토스트 : 정답 확인용
+            //Toast.makeText(this, "debug:"+answer, Toast.LENGTH_SHORT).show();   //디버깅 토스트 : 정답 확인용
             textViewNum1.setText(String.valueOf(num1));
             textViewNum2.setText(String.valueOf(num2));
             textViewIcon.setText(operator);
@@ -158,7 +158,7 @@ public class CalcActivity extends AppCompatActivity {
         textViewIcon.setText(operator1);
 
         answer = calculateAnswer(num11, num22, operator1);
-        Toast.makeText(this, "debug:"+answer, Toast.LENGTH_SHORT).show();   //디버깅 토스트 : 정답 확인용
+        //Toast.makeText(this, "debug:"+answer, Toast.LENGTH_SHORT).show();   //디버깅 토스트 : 정답 확인용
         startTimer();
     }
 
